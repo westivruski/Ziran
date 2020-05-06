@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+xmlns:tools='http://schemas.android.com/tools'
+android:orientation='vertical'
+android:layout_width='match_parent'
+android:layout_height='match_parent'
+android:layout_margin='16dp'>
+
+<TextView
+    style='?android:listSeparatorTextViewStyle'
+    android:layout_width='match_parent'
+    android:layout_height='wrap_content'
+    android:text='@string/event_name'/>
+
+<EditText
+    android:id='@+id/et_event_name'
+    android:layout_width='match_parent'
+    android:layout_height='wrap_content'
+    android:hint='@string/event_name_hint'
+    android:inputType="text"
+    android:importantForAutofill="no" />
+
+<TextView
+    style='?android:listSeparatorTextViewStyle'
+    android:layout_width='match_parent'
+    android:layout_height='wrap_content'
+    android:text='@string/event_description'/>
+
+<Button
+    android:id='@+id/bt_event_date'
+    android:layout_width='match_parent'
+    android:layout_height='wrap_content'
+    tools:text='Wed Nov 14 11:56 EST 2018'/>
+
+<CheckBox
+    android:id='@+id/cb_event_expired'
+    android:layout_width='match_parent'
+    android:layout_height='wrap_content'
+    android:text='@string/event_expired'/>
+
+</LinearLayout>
